@@ -21,5 +21,9 @@
 // console.log(arrayName)
 
 // 3 : Object
-var nguyenVanA = {name : 'Nguyen Van A', age : 20}
-console.log(nguyenVanA['name'])
+// var nguyenVanA = {name : 'Nguyen Van A', age : 20}
+// console.log(nguyenVanA['name'])
+
+//4 : Array
+var arrayNames = ["Teo","Ti","Tun"]
+console.log(arrayNames[0])
