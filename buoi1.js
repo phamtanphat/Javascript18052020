@@ -21,9 +21,36 @@
 // console.log(arrayName)
 
 // 3 : Object
-// var nguyenVanA = {name : 'Nguyen Van A', age : 20}
+// var nguyenVanA = {name : "Nguyen Van A", age : 20}
 // console.log(nguyenVanA['name'])
 
 //4 : Array
-var arrayNames = ["Teo","Ti","Tun"]
-console.log(arrayNames[0])
+// var arrayNames = ["Teo","Ti","Tun"]
+// console.log(arrayNames[0])
+
+// 5: Toan tu
+//  + - * / % ++ -- 
+// var a = 10
+// var b = 2
+// console.log(a / b)
+// a = a + 1
+// a += 1
+// a = ++a
+// console.log(a)
+
+var a = 10
+var b = 5
+var c = a++ - b++ + --b + b++ - ++a + --a + b-- + a--
+// 10 - b++ + --b + b++ - ++a + --a + b-- + a-- a = 11, b = 5
+// 10 - 5 + --b + b++ - ++a + --a + b-- + a-- a = 11, b = 6
+// 10 - 5 + 5 + b++ - ++a + --a + b-- + a-- a = 11, b = 5
+// 10 - 5 + 5 + 5 - ++a + --a + b-- + a-- a = 11, b = 6
+// 10 - 5 + 5 + 5 - 12 + --a + b-- + a-- a = 12, b = 6
+// 10 - 5 + 5 + 5 - 12 + 11 + b-- + a-- a = 11, b = 6
+// 10 - 5 + 5 + 5 - 12 + 11 + 6 + a--  a = 11, b = 5
+// 10 - 5 + 5 + 5 - 12 + 11 + 6 + 11   a = 11, b = 5
+//15  - 1 + 17
+// 31
+console.log(c)
+
+// ketqua
