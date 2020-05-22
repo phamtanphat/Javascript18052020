@@ -81,10 +81,23 @@
 // }
 // console.log(myDog.showName())
 
-function setName(object){
-    return object.name = "B";
-}
-var a = {name : "A"}
-console.log(setName(a))
-console.log(a)
+// function setName(object){
+//     return object.name = "B";
+// }
+// var a = {name : "A"}
+// console.log(setName(a))
+// console.log(a)
+
+// 7 : Cau dieu kien
+
+// Co 6 gia tri tuong trung cho false
+// false , 0 , '' , null , undefined , NaN
+var a = 5 
+var b = 10
+if (a)
+    console.log("True")
+else
+    console.log("False")
+
+
 
