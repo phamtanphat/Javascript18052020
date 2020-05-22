@@ -12,6 +12,12 @@
 // TH2 : Truy van toi thuoc tinh khong ton tai
 // var nguyenVanA = {name : 'Nguyen Van A', age : 20}
 // console.log(nguyenVanA.address)
+// Th3 : Phuong thuc khong co return hoac chi tu return 
+// function tinhtong(a , b){
+//     return
+//  }
+ 
+// console.log(tinhtong(5, 10))
 // Object type (Kieu doi tuong)
 // JSON
 // var teo = {name : 'Nguyen Van Teo', age : 20}
@@ -38,9 +44,9 @@
 // a = ++a
 // console.log(a)
 
-var a = 10
-var b = 5
-var c = a++ - b++ + --b + b++ - ++a + --a + b-- + a--
+// var a = 10
+// var b = 5
+// var c = a++ - b++ + --b + b++ - ++a + --a + b-- + a--
 // 10 - b++ + --b + b++ - ++a + --a + b-- + a-- a = 11, b = 5
 // 10 - 5 + --b + b++ - ++a + --a + b-- + a-- a = 11, b = 6
 // 10 - 5 + 5 + b++ - ++a + --a + b-- + a-- a = 11, b = 5
@@ -51,6 +57,15 @@ var c = a++ - b++ + --b + b++ - ++a + --a + b-- + a--
 // 10 - 5 + 5 + 5 - 12 + 11 + 6 + 11   a = 11, b = 5
 //15  - 1 + 17
 // 31
-console.log(c)
+// console.log(c)
 
-// ketqua
+
+// 5 : Function
+// function showName(name){
+//     console.log(name)
+// }
+function tinhtong(a , b){
+   return
+}
+
+console.log(tinhtong(5, 10))
