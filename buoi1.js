@@ -64,8 +64,27 @@
 // function showName(name){
 //     console.log(name)
 // }
-function tinhtong(a , b){
-   return
-}
+// function tinhtong(a , b){
+//    return
+// }
 
-console.log(tinhtong(5, 10))
+// console.log(tinhtong(5, 10))
+
+// 6 : Object method
+// var myDog = {
+//     name: 'Kiki',
+//     weight : 5,
+//     age : 1,
+//     showName : function(){
+//         console.log(this.name)
+//     }
+// }
+// console.log(myDog.showName())
+
+function setName(object){
+    return object.name = "B";
+}
+var a = {name : "A"}
+console.log(setName(a))
+console.log(a)
+
