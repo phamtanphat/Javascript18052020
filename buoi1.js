@@ -92,10 +92,15 @@
 
 // Co 6 gia tri tuong trung cho false
 // false , 0 , '' , null , undefined , NaN
-var a = 6
-var b = 10
-if (a > b & a > 5) 
-    console.log("True")
-else
-    console.log("False")
+// var a = 6
+// var b = 10
+// if (a > b || a > 5) 
+//     console.log("True")
+// else
+//     console.log("False")
+
+// 8 : So sanh
+var a = {name : 'A'}
+var b = {name : 'A'}
+console.log(a ==  b)
 
