@@ -92,12 +92,10 @@
 
 // Co 6 gia tri tuong trung cho false
 // false , 0 , '' , null , undefined , NaN
-var a = 5 
+var a = 6
 var b = 10
-if (a)
+if (a > b & a > 5) 
     console.log("True")
 else
     console.log("False")
-
-
 
