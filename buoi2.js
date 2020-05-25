@@ -185,7 +185,9 @@
 // console.log(newNumArray)
 
 function namesOnly(arr) {
-
+    console.log(arr.map(function(value , index){
+        return value['name']
+    }))
 }
 
 namesOnly([
@@ -210,6 +212,7 @@ namesOnly([
     age: 100
   }
 ])
+
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
 
 
