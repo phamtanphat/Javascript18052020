@@ -92,9 +92,78 @@
 // console.log(arrayNames.splice(1 , 2 ))
 
 
-function removeEnd(arr, n) {
-    arr.splice( arr.length - n , n )
-    return arr
+// function removeEnd(arr, n) {
+//     arr.splice( arr.length - n , n )
+//     return arr
+// }
+
+// console.log(removeEnd([2, 3, 1, 8, 9, 7], 1));  // [2,3,1]
+
+// 11 : Function nhan tham so la 1 function
+/**
+ * 1. Viết hàm double nhận vào 1 số bất kì, hiển thị ra số đó nhân đôi
+ * 2. Viết hàm sumAndDo nhận vào 1 array và 1 callback function. Hàm sumAndDo làm nhiệm vụ tính tổng array đó, 
+ * sau đó gọi callback function với tham số là kết quả tổng vừa tính
+ */
+
+// function double(num) {
+//     return num * 2
+// }
+
+// function sumAndDo(nums, callback) {
+//     var result = 0;
+//     for (var element of nums){
+//         result += callback(element)
+//     }
+//     console.log(result)
+// }
+
+// sumAndDo([1, 2, 3], double);
+
+// 1 - 100
+// 1 : in so chan
+// 2 : in so le
+// 3 : in so chia 3 du 1
+// 4 : in so can bac 2
+
+// in so chan
+// for ( var i = 1 ; i <= 100 ; i++){
+//     if ( i % 2 == 0){
+//         console.log(i)
+//     }
+// }
+
+// in so le
+// for ( var i = 1 ; i <= 100 ; i++){
+//     if ( i % 2 == 1){
+//         console.log(i)
+//     }
+// }
+
+
+// in so chia 3 du 1
+// for ( var i = 1 ; i <= 100 ; i++){
+//     if ( i % 3 == 1){
+//         console.log(i)
+//     }
+// }
+
+
+// in so chinh phuong
+// for ( var i = 1 ; i <= 100 ; i++){
+//     if (Math.sqrt(i) % 1 == 0  ){
+//         console.log(i)
+//     }
+// }
+
+function tinhtoan(callback){
+    for ( var i = 1 ; i <= 100 ; i++){
+        var dk = callback(i)
+        if (dk) console.log(i)
+    }
 }
 
-console.log(removeEnd([2, 3, 1, 8, 9, 7], 1));  // [2,3,1]
+tinhtoan(function(i){
+    return Math.sqrt(i) % 1 == 0
+})
+
