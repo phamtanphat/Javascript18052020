@@ -100,7 +100,13 @@
 //     console.log("False")
 
 // 8 : So sanh
-var a = {name : 'A'}
-var b = {name : 'A'}
-console.log(a ==  b)
+// var a = {name : 'A'}
+// var b = {name : 'A'}
+// console.log(a == b)
+
+// 9 : Vong lap
+var i = 0 
+for ( ; i <= 10 ; i++){
+    console.log(i * i)
+}
 
