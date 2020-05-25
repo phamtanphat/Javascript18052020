@@ -156,14 +156,61 @@
 //     }
 // }
 
-function tinhtoan(callback){
-    for ( var i = 1 ; i <= 100 ; i++){
-        var dk = callback(i)
-        if (dk) console.log(i)
-    }
+// function tinhtoan(callback){
+//     for ( var i = 1 ; i <= 100 ; i++){
+//         var dk = callback(i)
+//         if (dk) console.log(i)
+//     }
+// }
+
+// tinhtoan(function(i){
+//     return Math.sqrt(i) % 1 == 0
+// })
+
+// function dosth(callback){
+//     callback()
+// }
+// dosth(console.log)
+
+// 12 : Map
+
+// var numArray = [5,10,1,8,9]
+
+// var newNumArray = numArray.map(function(value , index){
+//     if (value % 2 == 0){
+//         return value * 2
+//     }
+//     return value
+// })
+// console.log(newNumArray)
+
+function namesOnly(arr) {
+
 }
 
-tinhtoan(function(i){
-    return Math.sqrt(i) % 1 == 0
-})
+namesOnly([
+  {
+    name: "Angelina Jolie",
+    age: 80
+  },
+  {
+    name: "Eric Jones",
+    age: 2
+  },
+  {
+    name: "Paris Hilton",
+    age: 5
+  },
+  {
+    name: "Kayne West",
+    age: 16
+  },
+  {
+    name: "Bob Ziroll",
+    age: 100
+  }
+])
+// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+
+
 
