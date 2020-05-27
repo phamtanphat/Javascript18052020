@@ -114,8 +114,48 @@
 // console.log(totalVotes(voters))// 7
 
 // 15 : Sort
-var numArr = ['5','2','3','1','10','2','11','8']
-numArr.sort(function(a , b){
-    return b - a
-})
-console.log(numArr)
+// var numArr = ['5','2','3','1','10','2','11','8']
+// numArr.sort(function(a , b){
+//     return b - a
+// })
+// console.log(numArr)
+
+// var teo = {
+//     name : 'Teo',
+//     age : 10,
+//     address : 'Quan 1',
+//     showName : function(){
+//         console.log(this.name)
+//     }
+// }
+
+// delete teo.showName
+// console.log(teo)
+
+// 16 : Toan tu ba ngoi
+// var a = 5
+// var b = 10
+
+// var max = (a > b) ? a : b
+// console.log(max)
+
+// Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
+function doSomething(a) {
+  var b;
+  if (a > 0) {
+    b = 1;
+  } else if (a < 0) {
+    b = 2;
+  } else {
+    b = 3;
+  }
+  return b;
+}
+
+function doSomethingTernary(a) {
+  
+}
+console.log(doSomethingTernary(0))
+console.log(doSomething(0))
+
+// Test 2 hàm trên với cùng đầu vào
