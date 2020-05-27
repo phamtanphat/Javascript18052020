@@ -78,7 +78,7 @@
 
 
 // 14 : Reduce
-var numArr = [1,2,3,4,5,6,7,8,9,10]
+// var numArr = [1,2,3,4,5,6,7,8,9,10]
 
 // Su dung reduce khong co gia tri khoi tao
 // var total = numArr.reduce(function(prevalue , currentValue ){
@@ -87,28 +87,35 @@ var numArr = [1,2,3,4,5,6,7,8,9,10]
 // })
 
 // Trả về số lượng người đã vote
-function totalVotes(arr) {
-    return arr.map(function(value){
-        return value.voted
-    }).reduce(function(total,currentValue){
-        if(currentValue){
-            total++
-        }
-        return total
-    }, 0)
-}
-var voters = [
-  {name:'Bob' , age: 30, voted: true},
-  {name:'Jake' , age: 32, voted: true},
-  {name:'Kate' , age: 25, voted: false},
-  {name:'Sam' , age: 20, voted: false},
-  {name:'Phil' , age: 21, voted: true},
-  {name:'Ed' , age:55, voted:true},
-  {name:'Tami' , age: 54, voted:true},
-  {name: 'Mary', age: 31, voted: false},
-  {name: 'Becky', age: 43, voted: false},
-  {name: 'Joey', age: 41, voted: true},
-  {name: 'Jeff', age: 30, voted: true},
-  {name: 'Zack', age: 19, voted: false}
-];
-console.log(totalVotes(voters))// 7
+// function totalVotes(arr) {
+//     return arr.map(function(value){
+//         return value.voted
+//     }).reduce(function(total,currentValue){
+//         if(currentValue){
+//             total++
+//         }
+//         return total
+//     }, 0)
+// }
+// var voters = [
+//   {name:'Bob' , age: 30, voted: true},
+//   {name:'Jake' , age: 32, voted: true},
+//   {name:'Kate' , age: 25, voted: false},
+//   {name:'Sam' , age: 20, voted: false},
+//   {name:'Phil' , age: 21, voted: true},
+//   {name:'Ed' , age:55, voted:true},
+//   {name:'Tami' , age: 54, voted:true},
+//   {name: 'Mary', age: 31, voted: false},
+//   {name: 'Becky', age: 43, voted: false},
+//   {name: 'Joey', age: 41, voted: true},
+//   {name: 'Jeff', age: 30, voted: true},
+//   {name: 'Zack', age: 19, voted: false}
+// ];
+// console.log(totalVotes(voters))// 7
+
+// 15 : Sort
+var numArr = ['5','2','3','1','10','2','11','8']
+numArr.sort(function(a , b){
+    return b - a
+})
+console.log(numArr)
