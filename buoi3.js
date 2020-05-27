@@ -88,9 +88,15 @@ var numArr = [1,2,3,4,5,6,7,8,9,10]
 
 // Trả về số lượng người đã vote
 function totalVotes(arr) {
-
+    return arr.map(function(value){
+        return value.voted
+    }).reduce(function(total,currentValue){
+        if(currentValue){
+            total++
+        }
+        return total
+    }, 0)
 }
-
 var voters = [
   {name:'Bob' , age: 30, voted: true},
   {name:'Jake' , age: 32, voted: true},
@@ -105,4 +111,4 @@ var voters = [
   {name: 'Jeff', age: 30, voted: true},
   {name: 'Zack', age: 19, voted: false}
 ];
-totalVotes(voters) // 7
+console.log(totalVotes(voters))// 7
