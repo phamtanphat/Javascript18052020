@@ -165,12 +165,17 @@
 
 // 16 : Scope
 // global scope
-var a = 10
+// var a = 10
 
-function tinhtong(b){
-    // local scope
-    // scope :  {}
-    var a = 5
-    return a + b
-}
-console.log(tinhtong(10))
+// function tinhtong(b){
+//     // local scope
+//     // scope :  {}
+//     var a = 5
+//     return a + b
+// }
+// console.log(tinhtong(10))
+
+
+// 17 : var let const (hoisting)
+console.log(a)
+let a
