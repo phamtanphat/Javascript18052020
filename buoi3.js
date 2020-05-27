@@ -161,3 +161,16 @@
 // console.log(doSomething(-1))
 
 // Test 2 hàm trên với cùng đầu vào
+
+
+// 16 : Scope
+// global scope
+var a = 10
+
+function tinhtong(b){
+    // local scope
+    // scope :  {}
+    var a = 5
+    return a + b
+}
+console.log(tinhtong(10))
