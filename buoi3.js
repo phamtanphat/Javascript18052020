@@ -140,22 +140,24 @@
 // console.log(max)
 
 // Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
-function doSomething(a) {
-  var b;
-  if (a > 0) {
-    b = 1;
-  } else if (a < 0) {
-    b = 2;
-  } else {
-    b = 3;
-  }
-  return b;
-}
+// function doSomething(a) {
+//   var b;
+//   if (a > 0) {
+//     b = 1;
+//   } else if (a < 0) {
+//     b = 2;
+//   } else {
+//     b = 3;
+//   }
+//   return b;
+// }
 
-function doSomethingTernary(a) {
-  
-}
-console.log(doSomethingTernary(0))
-console.log(doSomething(0))
+// function doSomethingTernary(a) {
+//     var result = (a > 0) ? 1 : (a == 0) ? 3 : 2
+//     return result
+
+// }
+// console.log(doSomethingTernary(-1))
+// console.log(doSomething(-1))
 
 // Test 2 hàm trên với cùng đầu vào
