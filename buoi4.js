@@ -58,10 +58,20 @@
 // }  
 // console.log(Array.from(obj))
 
-function sum(){
-    const numbers = Array.from(arguments)
-    return numbers.reduce((sum , num) => sum + num)
-}
-console.log(sum(1,2,3,4,5,6,7))
+// function sum(){
+//     const numbers = Array.from(arguments)
+//     return numbers.reduce((sum , num) => sum + num)
+// }
+// console.log(sum(1,2,3,4,5,6,7))
+
+// function sum(a = 0 , b = 0 ){
+//     console.log(a + b)
+// }
+// sum(10 )
 
   
+// 21 : Call
+function greeting(name,age){
+    console.log(`Hi! ${name} . I am ${age} . My location at ${this.location}` )
+}
+greeting.call({location : 'D1'},'Phat',26)
