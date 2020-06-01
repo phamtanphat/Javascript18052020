@@ -177,5 +177,9 @@
 
 
 // 17 : var let const (hoisting)
-console.log(a)
-let a
+// console.log(a)
+// let a
+// for ( let i = 0 ; i < 10 ; i++){
+
+// }
+// console.log(i)
