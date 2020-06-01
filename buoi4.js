@@ -71,7 +71,27 @@
 
   
 // 21 : Call
-function greeting(name,age){
-    console.log(`Hi! ${name} . I am ${age} . My location at ${this.location}` )
-}
-greeting.call({location : 'D1'},'Phat',26)
+// function greeting(name,age){
+//     console.log(`Hi! ${name} . I am ${age} . My location at ${this.location}` )
+// }
+// greeting.call({location : 'D1'},'Phat',26)
+
+// 22 : Apply
+
+// function sum(){
+//     const numbers = Array.from(arguments)
+//     return numbers.reduce((sum , num )=> sum + num , 0)
+// }
+// function average(){
+//     const x = sum.apply(null,arguments)
+//     return x / arguments.length
+// }
+// average(1,2,3,6)
+
+// 22 : Enhanced object literals
+
+// function showName(name){
+//     return {name}
+// }
+// console.log(showName('phat'))
+
