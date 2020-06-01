@@ -9,17 +9,38 @@
 
 // const sayHello = mouse.sayhi
 // sayHello.bind({name : 'Cat'})()
-function run(cb){
-    console.log('run...')
-    cb()
-}
+// function run(cb){
+//     console.log('run...')
+//     cb()
+// }
   
-const mouse = {
-    name : 'Mickey',
+// const mouse = {
+//     name : 'Mickey',
+//     run : function() {
+//         console.log(this.name + ' is running')
+//     }
+// }
+  
+// run(mouse.run.bind(mouse))
+
+// 18 : Arrow function
+// const arrayNum = [2,3,4,5,6,7,8,9,10]
+// const newArrayNum = arrayNum.map((value , index) => {
+//     return value * 2
+// })
+// console.log(newArrayNum)
+
+// Vi du
+const a = {
+    name : 'AAA',
     run : function() {
-        console.log(this.name + ' is running')
+        var run2 = function(){
+            console.log(this.name)
+        }
+        run2()
     }
 }
-  
-run(mouse.run.bind(mouse))
+
+a.run()
+
   
