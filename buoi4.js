@@ -122,3 +122,23 @@
 // let obj2 = {...obj1}
 
 // console.log(obj2)
+
+// 25 : 
+// const arr = [10,20,30,40,50]
+// Môi thằng nhận 1 giá trị
+// cách 1
+// const [a ,b , c , d ,e] = arr
+// cách 2 : dùng rest
+// const [a ,...b] = arr
+// console.log(a ,b )
+
+const object = {
+    a : 1 ,
+    b : 2 ,
+    c : 3 ,
+  }
+  
+const { b } = object
+console.log(b)
+  
+
