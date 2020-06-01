@@ -31,16 +31,37 @@
 // console.log(newArrayNum)
 
 // Vi du
-const a = {
-    name : 'AAA',
-    run : function() {
-        var run2 = function(){
-            console.log(this.name)
-        }
-        run2()
-    }
-}
+// const a = {
+//     name : 'AAA',
+//     run : function() {
+//         var run2 = function(){
+//             console.log(this.name)
+//         }
+//         run2()
+//     }
+// }
 
-a.run()
+// a.run()
+
+// 19 : Template string
+//   function greeting(name){
+//     return `Hi, ${name} !`
+//   }
+//   console.log(greeting('phat'))
+
+// 20 Arguments
+// const obj = {
+//     0 : 'Thanh',
+//     1 : 'Trang',
+//     2 : 'Thủy',
+//     length : 3
+// }  
+// console.log(Array.from(obj))
+
+function sum(){
+    const numbers = Array.from(arguments)
+    return numbers.reduce((sum , num) => sum + num)
+}
+console.log(sum(1,2,3,4,5,6,7))
 
   
